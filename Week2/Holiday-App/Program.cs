@@ -13,33 +13,37 @@ namespace HolidayApp
                 string lokasyon;
                 int paketFiyati = 0;
 
-                while (true) //Lokasyon seçimi için döngü başlıyor
+                while (true) // Lokasyon seçimi için döngü başlıyor
                 {
+                    Console.WriteLine("Lütfen bir lokasyon seçiniz: Bodrum, Marmaris veya Çeşme");
                     lokasyon = Console.ReadLine().ToLower();
 
-                    if (lokasyon == "bodrum")
+                    switch (lokasyon)
                     {
-                        paketFiyati = 4000;
-                        lokasyon = "Bodrum";//lokasyonu ekranda büyük harfle yazdırmak için çünkü kullanıcıdan küçük harfle alıyoruz.
-                        break;
+                        case "bodrum":
+                            paketFiyati = 4000;
+                            lokasyon = "Bodrum"; //lokasyonu ekranda büyük harfle yazdırmak için çünkü kullanıcıdan küçük harfle alıyoruz.
+                            break;
+
+                        case "marmaris":
+                            paketFiyati = 3000;
+                            lokasyon = "Marmaris";
+                            break;
+
+                        case "çeşme":
+                            paketFiyati = 5000;
+                            lokasyon = "Çeşme";
+                            break;
+
+                        default:
+                            Console.WriteLine("Hatalı giriş yaptınız. Lütfen Bodrum, Marmaris veya Çeşme yazınız.");
+                            continue; // Hatalı girişte döngüye devam ediyoruz.
                     }
-                    else if (lokasyon == "marmaris")
-                    {
-                        paketFiyati = 3000;
-                        lokasyon = "Marmaris";
-                        break;
-                    }
-                    else if (lokasyon == "çeşme")
-                    {
-                        paketFiyati = 5000;
-                        lokasyon = "Çeşme";
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Hatalı giriş yaptınız. Lütfen Bodrum, Marmaris veya Çeşme yazınız.");
-                    }
+
+                    // Doğru bir lokasyon seçildiğinde döngüden çıkıyoruz.
+                    break;
                 }
+
 
                 Console.WriteLine($"Seçtiğiniz lokasyon: {lokasyon}");
                 Console.WriteLine("Kaç kişi için tatil planlamak istiyorsunuz?");
