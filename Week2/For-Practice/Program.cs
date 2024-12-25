@@ -5,7 +5,7 @@ namespace ForPractice
     {
         static void Main(string[] args)
         {
-            //Task1 Konsol ekranına 10 kere "Kendime inanıyorum, ben bu yazılım işini hallederim!" yazdırma
+            //Konsol ekranına 10 kere "Kendime inanıyorum, ben bu yazılım işini hallederim!" yazdırma
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Kendime inanıyorum, ben bu yazılım işini hallederim!");
@@ -33,7 +33,7 @@ namespace ForPractice
                 toplam += i;
             }
             Console.WriteLine(toplam);
-            //1 ile 120 arasındaki tek ve çift sayıların toplamlarını ayrı ayrı ekrana yazdırınız.
+            //1 ile 120 arasındaki tek ve çift sayıların toplamlarını ayrı ayrı ekrana yazdırma
             Console.WriteLine("\n----------------------------------------");
             int teklerinToplami = 0;
             int ciftlerinToplami = 0;
@@ -50,7 +50,7 @@ namespace ForPractice
 
             }
             Console.WriteLine($"Teklerin Toplamı: {teklerinToplami}" );
-            Console.WriteLine("Çiftlerin Toplamı: " + ciftlerinToplami);
+            Console.WriteLine($"Çiftlerin Toplamı: {ciftlerinToplami} ");
         }
     }
 }
