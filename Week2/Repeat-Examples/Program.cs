@@ -192,7 +192,7 @@ namespace RepeatExamples
 
             //}
 
-
+     
             //Console.WriteLine("----------------------------------------------------------------------------------------------------------------------------");
 
             //task14 Kullanıcıdan alınan sayının tek mi yoksa çift mi olduğu bilgisini (true/false) dönen bir metot.
@@ -253,6 +253,8 @@ namespace RepeatExamples
             //string sentence = "    Selamlar   ";
             //sentence = sentence.Trim();
             //Console.WriteLine(sentence);
+
+            
 
         }
     }
