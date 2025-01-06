@@ -18,7 +18,7 @@ namespace CreateClassWithOOP
           get { return Ad; } // Ad property’sini döndür
           set { Ad = value; } // Ad property’sine değer ata } Bu yapı çalışır, ama gereksizdir çünkü Ad zaten erişilebilir durumdadır.
         ----------------------------------------------------------------------------------------------------------------------------------------------------*/
-        public string Ad { get; set; }
+        public string Ad { get; set; } //Senaryoda bizden public tanımlamamız istenildi.
         public string Soyad { get; set; }
         public DateTime DogumTarihi { get; set; }
         public string Branş {  get; set; }
