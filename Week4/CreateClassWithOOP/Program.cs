@@ -3,7 +3,7 @@
 public class Program
 {
     static void Main(string[] args)
-    {
+    {   //öğrenci nesnemiz
         Person ögrenci = new Person();
         ögrenci.Ad = "Efşan";
         ögrenci.Soyad = "Nart";
@@ -12,7 +12,7 @@ public class Program
         ögrenci.Ogrenciİnfo();
 
 
-
+        //öğretmen nesnemiz
         Person ögretmen = new Person();
         ögretmen.Ad = "Sertan";
         ögretmen.Soyad = "Bozkuş";
