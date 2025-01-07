@@ -11,7 +11,7 @@ namespace UsingConstructor
     {
         public string _name;
         public string _surname;
-        public DateTime _birthDate;
+        public DateTime _birthDate { get; private set; } // DogumTarihi field'ını sadece bu class içinde set edilebilir olarak tanımladım
 
         //Default contructor
         public Baby()
@@ -23,7 +23,7 @@ namespace UsingConstructor
         }
         //Parametreli constructor
         public Baby(string name, string surname)
-        { 
+        {
             _name = name;
             _surname = surname;
             BirthProcess();
