@@ -9,28 +9,28 @@ namespace UsingConstructor
 {
     internal class Baby
     {
-        public string _name;
-        public string _surname;
-        public DateTime _birthDate { get; private set; } // DogumTarihi field'ını sadece bu class içinde set edilebilir olarak tanımladım
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public DateTime BirthDate { get; private set; } // DogumTarihi property sadece bu class içinde set edilebilir olarak tanımladım
 
         //Default contructor
         public Baby()
         {   //OverLoading 
             //Eğer özel bir constructor tanımlarsak ve boş bir new ile kullanılacak constructora ihtiyaç duyarsak bunu tanımlarız
-            _name = "Unknown";
-            _surname = "Unknown";
+            Name = "Unknown";
+            Surname = "Unknown";
             BirthProcess();
         }
         //Parametreli constructor
         public Baby(string name, string surname)
         {
-            _name = name;
-            _surname = surname;
+            Name = name;
+            Surname = surname;
             BirthProcess();
         }
         public void BirthProcess()
         {    //2 Constructor içinde ortak olarak bebek nesnesi oluşturulduğunda konsol ekranında bir " Ingaaaa " yazısı görülsün ve Doğum Tarihi o an olarak atansın.
-            _birthDate = DateTime.Now;
+            BirthDate = DateTime.Now;
             Console.WriteLine("Ingaaaa");
         }
     }
