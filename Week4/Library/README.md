@@ -1,55 +1,62 @@
-# Patika Kütüphanesi - Kitap Kayıt Uygulaması
+# Patika Library - Book Registration Application 📚
 
-Bu proje, kitap kayıtlarını tutmak ve kitap bilgilerini yönetmek için basit bir konsol uygulamasıdır. Kitap nesneleri `Book` sınıfı üzerinden oluşturulmaktadır. 
+This project is a simple console application to manage book records and book information. Book objects are created through the `Book` class.
 
-## Özellikler
+## Features ✨
 
-- **Kitap Bilgileri:**
-  - Ad
-  - Yazar Adı
-  - Yazar Soyadı
-  - Sayfa Sayısı
-  - Yayınevi
-  - Kayıt Tarihi (otomatik olarak atanır)
+- **Book Information:**
+  - Name 📖
+  - Author's First Name ✍️
+  - Author's Last Name ✍️
+  - Number of Pages 📄
+  - Publisher 🏢
+  - Registration Date (automatically assigned) 📅
 
-- **Yapıcı Metotlar (Constructors):**
-  - **Varsayılan Constructor (Default):**
-    - Parametre almaz.
-    - Kayıt tarihi otomatik olarak atanır.
-  - **Parametreli Constructor:**
-    - Kitap adı, yazar adı, sayfa sayısı ve yayınevi bilgilerini parametre olarak alır.
-    - Kayıt tarihi yine otomatik olarak atanır.
+- **Constructors:**
+  - **Default Constructor:**
+    - Does not accept parameters.
+    - The registration date is automatically assigned.
+  - **Parameterized Constructor:**
+    - Accepts book name, author’s name, number of pages, and publisher as parameters.
+    - The registration date is also automatically assigned.
 
+## Usage 🔧
+
+### Example Code 🖥️
+
+#### Using the Default Constructor
+```csharp
+Book book1 = new Book()
+{
+    Name = "Sabırsız Yürek",
+    WriterName = "Stefan",
+    WriterSurname = "Zweig",
+    NumberOfPages = 464,
+    Publisher = "Alfa Kitabevi"
+};
+````
+### Using the Parameterized Constructor
+```csharp
+Book book2 = new Book("Les Misérables", "Victor Hugo", 1724, "Can Yayınları");
+```
+## Printing Book Information 📄
+```csharp
+book1.BookInfo();
+book2.BookInfo();
+```
+### Expected Output 📊
 ## Kullanım
 
 ### Örnek Kod
 
 #### Default Constructor Kullanımı
 ```csharp
-Book book1 = new Book()
-{
-    Name = "Adı Aylin",
-    WriterName = "Ayşe",
-    WriterSurname = "Kulin",
-    NumberOfPages = 398,
-    Publisher = "Remzi Kitabevi"
-};
-````
-#### Parametreli Constructor Kullanımı
-```csharp
-Book book2 = new Book("Sefiller", "Victor Hugo", 1724, "Can Yayınları");
-````
-#### Kitap Bilgilerini Yazdırma
-```csharp
-book1.Bookİnfo();
-book2.Bookİnfo();
-````
-#### Beklenen Çıktı
-```txt
-Adı Sabırsız Yürek adlı kitap, Stefan Zweig tarafından yazılmıştır.
-464 sayfa, Alfa Yayınları yayınevinden 09.01.2025 tarihinde kaydedildi.
+The book titled "Sabırsız Yürek" was written by Stefan Zweig.
+464 pages, published by Alfa Yayınları, registered on 09.01.2025.
 
-Sefiller adlı kitap, Victor Hugo tarafından yazılmıştır.
-1724 sayfa, Can Yayınları yayınevinden 09.01.2025 tarihinde kaydedildi.
+The book titled "Les Misérables" was written by Victor Hugo.
+1724 pages, published by Can Yayınları, registered on 09.01.2025.
+```
+
 
 
