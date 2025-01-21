@@ -16,12 +16,16 @@ public class Program
 
                 Console.WriteLine("Ad :");
                 phone.Name = Console.ReadLine();
+
                 Console.Write("Açıklama : ");
                 phone.Description = Console.ReadLine();
+
                 Console.Write("İşletim Sistemi ");
                 phone.OperatingSystem = Console.ReadLine();
+
                 Console.Write("TR Lisanslı mı ? (true/false):");
                 phone.IsTrLıcense = Convert.ToBoolean(Console.ReadLine());
+
                 Console.Write("Ürün başarıyla üretildi !");
                 phone.PrintInfo();
 
@@ -32,14 +36,19 @@ public class Program
                 Computer computer = new Computer();
                 Console.Write("Seri Numarası: ");
                 computer.SerialNumber = Convert.ToInt32(Console.ReadLine());
+
                 Console.Write("Ad: ");
                 computer.Name = Console.ReadLine();
+
                 Console.Write("Açıklama: ");
                 computer.Description = Console.ReadLine();
+
                 Console.Write("İşletim Sistemi: ");
                 computer.OperatingSystem = Console.ReadLine();
+
                 Console.Write("USB Giriş Sayısı (2 veya 4): ");
                 computer.NumberOfUsbPorts = Convert.ToInt32(Console.ReadLine());
+
                 Console.Write("Bluetooth var mı? (true/false): ");
                 computer.IsBluetoothSupported = Convert.ToBoolean(Console.ReadLine());
 
