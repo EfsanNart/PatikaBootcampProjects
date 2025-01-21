@@ -27,10 +27,12 @@ namespace FinalProject.Concrete
             }
         }
         public bool IsBluetoothSupported { get; set; }
+        //abstract metot
         public override void GetProductName()
         {
             Console.WriteLine($"Bilgisayarınızın Adı --> {Name}");
         }
+        //Polymorphism
         public override void PrintInfo()
         {
             base.PrintInfo();
