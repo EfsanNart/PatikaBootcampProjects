@@ -1,22 +1,25 @@
 # SQL Query Scenarios for dvdrental Database 📊🎬
 
-Welcome to the SQL query scenarios for the **dvdrental** example database! Below are the SQL queries that solve various tasks involving the **country** and **film** tables. Follow the instructions to execute the queries and get the results.
+Welcome to the SQL query scenarios for the **dvdrental** example database! Below are the SQL queries that solve various tasks involving the **film**, **country**, and **city** tables. Follow the instructions to execute the queries and get the results.
 
 ---
 
 ## Query Scenarios 🔍
 
-1. **Find Countries Starting with 'A' and Ending with 'a'** 🌍🔠  
-   This task involves retrieving countries from the **country** table where the **country** name starts with 'A' and ends with 'a'.
+1. **Find Distinct Replacement Costs** 💰🎥  
+   This task involves retrieving all distinct values from the **replacement_cost** column in the **film** table.
 
-2. **Find Countries with Names of at Least 6 Characters Ending with 'n'** 🌎🔠  
-   Here, you will retrieve countries from the **country** table where the **country** name is at least 6 characters long and ends with the letter 'n'.
+2. **Count Distinct Replacement Costs** 💸🎬  
+   Here, you will count how many distinct values exist in the **replacement_cost** column of the **film** table.
 
-3. **Find Films Containing the Letter 'T' in the Title** 🎬🔤  
-   This query retrieves film titles from the **film** table that contain at least 4 occurrences of the letter 'T' (case-insensitive).
+3. **Count Films Starting with 'T' and Rating 'G'** 🎬⭐  
+   This query retrieves how many films from the **film** table have a **title** starting with 'T' and a **rating** of 'G'.
 
-4. **Filter Films Based on Title, Length, and Rental Rate** 🎥💡  
-   This task involves retrieving all columns from the **film** table where the **title** starts with 'C', the **length** is greater than 90, and the **rental_rate** is 2.99.
+4. **Count Countries with 5 Character Names** 🌍🔠  
+   This query counts how many **country** names in the **country** table consist of exactly 5 characters.
+
+5. **Count Cities Ending with 'R' or 'r'** 🏙️🔤  
+   This task involves counting how many **city** names in the **city** table end with the letter 'R' or 'r'.
 
 ---
 
@@ -41,4 +44,5 @@ Enjoy exploring the **dvdrental** database with these queries! If you have any q
 Happy querying! 🖋️✨
 
 ---
+
 
