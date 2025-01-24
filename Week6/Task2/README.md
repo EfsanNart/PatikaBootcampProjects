@@ -39,4 +39,3 @@ Happy querying! 🖋️✨
 
 ---
 
-This README file is designed to help you understand and execute the queries step-by-step while providing clear instructions and context. Let me know if you need further assistance!
