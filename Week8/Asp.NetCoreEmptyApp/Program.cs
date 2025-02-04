@@ -30,22 +30,22 @@ app.Run();
 /*
  ASP.NET Core MVC Temel Kavramlar ve Metotlar
 
-?Controller ? Kullanýcý isteklerini iþleyen ve modele/veritabanýna eriþerek uygun yanýtý döndüren sýnýftýr.
+-Controller --> Kullanýcý isteklerini iþleyen ve modele/veritabanýna eriþerek uygun yanýtý döndüren sýnýftýr.
 
-? Action ? Bir controller içindeki belirli bir isteði (GET, POST vb.) iþleyen metottur.
+-Action --> Bir controller içindeki belirli bir isteði (GET, POST vb.) iþleyen metottur.
 
-? Model ? Verileri temsil eden ve iþ mantýðýný taþýyan sýnýflardýr.
+-Model --> Verileri temsil eden ve iþ mantýðýný taþýyan sýnýflardýr.
 
-? View ? Kullanýcýya gösterilecek HTML sayfasýný oluþturan dosyalardýr.
+-View --> Kullanýcýya gösterilecek HTML sayfasýný oluþturan dosyalardýr.
 
-? Razor ? HTML içinde C# kodlarýný dinamik olarak yazmaya yarayan þablon motorudur.
+-Razor --> HTML içinde C# kodlarýný dinamik olarak yazmaya yarayan þablon motorudur.
 
-? RazorView ? Razor ile yazýlmýþ .cshtml uzantýlý görünümlerdir.
+-RazorView --> Razor ile yazýlmýþ .cshtml uzantýlý görünümlerdir.
 
-? wwwroot ? Statik dosyalarýn (CSS, JavaScript, resimler) saklandýðý klasördür.
+-wwwroot --> Statik dosyalarýn (CSS, JavaScript, resimler) saklandýðý klasördür.
 
-? builder.Build() ? Uygulama nesnesini oluþturur ve middleware’leri yapýlandýrýr.
+-builder.Build() --> Uygulama nesnesini oluþturur ve middleware’leri yapýlandýrýr.
 
-? app.Run() ? Uygulamayý baþlatýr ve gelen HTTP isteklerini iþler.
+-app.Run() -->  Uygulamayý baþlatýr ve gelen HTTP isteklerini iþler.
  
  */
