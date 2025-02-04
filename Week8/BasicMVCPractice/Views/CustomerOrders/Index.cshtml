@@ -1,0 +1,28 @@
+﻿@model BasicMVCPractice.Models.CustomerOrderViewModel
+
+
+
+<h2>Müşteri Bilgileri</h2>
+<p>ID: @Model.Customer.Id</p>
+<p>Ad: @Model.Customer.FirstName</p>
+<p>Soyad: @Model.Customer.LastName</p>
+<p>Email: @Model.Customer.Email</p>
+
+<h2>Siparişler</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Ürün Adı</th>
+        <th>Fiyat</th>
+        <th>Miktar</th>
+    </tr>
+    @foreach (var order in Model.Orders)
+    {
+        <tr>
+            <td>@order.Id</td>
+            <td>@order.ProductName</td>
+            <td>@order.Price</td>
+            <td>@order.Quantity</td>
+        </tr>
+    }
+</table>
