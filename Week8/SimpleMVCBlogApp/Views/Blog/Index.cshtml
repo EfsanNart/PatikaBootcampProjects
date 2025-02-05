@@ -1,0 +1,20 @@
+﻿@model List<BlogPost>
+<h2>@ViewData["PageTitle"]</h2>
+<p>Toplam Gönderi Sayısı:@ViewBag.TotalPosts</p>
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+<a asp-action="Create" class="btn btn-primary">Yeni gönderi</a>
+@foreach(var post in Model)
+{
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">@post.Title</h5>
+            <p class="card-text">
+                @post.Content.Substring(0,Math.Min(post.Content.Length,100)) ....
+            </p>
+            <a asp-action="Details" asp-route-id="@post.Id" class="btn btn-secondary">Detay</a>
+        </div>
+    </div>
+}
