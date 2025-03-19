@@ -8,6 +8,6 @@ namespace Survivor.Entities
         public string LastName { get; set; }
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
-        public CategoryEntity Category { get; set; }
+        public  CategoryEntity Category { get; set; }
     }
 }
