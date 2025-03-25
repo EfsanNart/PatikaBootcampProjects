@@ -39,7 +39,7 @@ Follow these steps to set up and run the project:
 
 ### 1️⃣ Clone the repository  
 ```sh
-git clone https://github.com/yEfsanNart/IdentityDataProtectionAPI.git
+git clone https://github.com/EfsanNart/IdentityDataProtectionAPI.git
 cd IdentityDataProtectionAPI
 ```
 
